@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- Loader -->
+
+<div id="loader">
+<img src="images/logo.png">
+</div>
+
+<!-- Intro -->
+
+<section class="intro"></section>
+
+<section class="text-intro">
+<h1 class="zoom-text" style="background: linear-gradient(90deg, #ff4d6d, #ffb703, #7ae582, #4cc9f0, #b5179e); -webkit-background-clip: text; background-clip: text; color: transparent;">Scroll Down</h1>
+</section>
+<!-- Video 1 -->
+
+<section class="video-section">
+
+<video id="video1" autoplay muted loop playsinline preload="auto">
+<source src="videos/video1.mp4" type="video/mp4">
+</video>
+
+</section>
+
+<!-- Gallery -->
+
+<section class="gallery">
+
+<div class="card left">
+
+<img src="images/img1.jpg">
+
+<div class="text">
+<h2>Sunrise</h2>
+<p class="card-text">Starting your day with silence + nature</p>
+</div>
+
+</div>
+
+<div class="card right">
+
+<img src="images/img2.jpg">
+
+
+<div class="text">
+<h2>Music</h2>
+<p class="card-text">“Music washes away the stress of everyday life.”</p>
+</div>
+
+</div>
+
+<div class="card left">
+
+<img src="images/img3.jpg">
+
+<div class="text">
+<h2>Mountain Hike</h2>
+<p class="card-text" style="color: black;">“With every step, leave stress behind.”</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Video 2 -->
+
+<section class="video-section">
+
+<video id="video2" autoplay muted loop playsinline preload="auto">
+<source src="videos/video2.mp4" type="video/mp4">
+</video>
+
+</section>
+
+<!-- Text -->
+
+<section class="text-section">
+
+<h1>Are you ready to hear the Rain?</h1>
+
+</section>
+
+<!-- Video 3 -->
+
+<section class="video-loop">
+
+<p class="video3-tip">turn on the audio to hear the rain</p>
+
+<div class="video-container">
+<video id="video3" autoplay muted loop playsinline>
+<source src="videos/video3.mp4" type="video/mp4">
+</video>
+<button class="mute-toggle" type="button" aria-label="Unmute video" data-video-mute="video3">&#128263;</button>
+</div>
+
+</section>
+
+<!-- Text Zoom Then Reveal Image 4 -->
+
+<section class="after-video3-zoom">
+<h1 class="after-video3-text" style="color: rgb(0, 0, 0);">WELCOME TO THE  NOSTALGIC MEMORIES</h1>
+</section>
+
+<section class="image4-section" id="image4">
+<img class="image4-bg" src="images/img4.png" alt="Image 4 background">
+<div class="explore-wrap">
+<button class="explore-btn" type="button">Let&#39;s Explore</button>
+</div>
+</section>
+
+<!-- Horizontal Scroll Section -->
+
+<section class="h-scroll" id="explore">
+<button class="home-btn" type="button" aria-label="Back to Image 4">
+<svg class="home-icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M3 10.5L12 3l9 7.5v9a1 1 0 0 1-1 1h-5.5v-6h-5v6H4a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+<span>Home</span>
+</button>
+<div class="h-track">
+<article class="h-panel">
+<img src="images/img5.jpg" alt="Panel 1 image">
+<div class="h-content">
+<h2>Tom and Jerry</h2>
+<p>“Chaos, laughter, and a friendship they never admitted.”</p>
+</div>
+</article>
+<article class="h-panel">
+<img src="images/img6.jpg" alt="Panel 2 image">
+<div class="h-content">
+<h2>Jackie Chan</h2>
+<p>“Pain, humor, and courage—all in one hero.”</p>
+</div>
+</article>
+<article class="h-panel">
+<img src="images/img7.jpg" alt="Panel 3 image">
+<div class="h-content">
+<h2>Chhota bheem</h2>
+<p>“A hero who made childhood feel strong and fearless.”</p>
+</div>
+</article>
+<article class="h-panel h-panel-final">
+<img src="images/img8.jpg" alt="Panel 4 image">
+<div class="h-final-overlay">Nostalgic</div>
+<div class="h-content">
+<h2>Pokemon</h2>
+<p>“We all wanted to catch dreams like Pokémon.”</p>
+</div>
+</article>
+</div>
+</section>
+
+<!-- Testimonials -->
+
+<section class="testimonial-section" id="testimonials">
+<div class="testimonial-inner">
+<div class="testimonial-backdrop" aria-hidden="true">
+<p>CALM BLOOMS WHEN WE BREATHE TOGETHER</p>
+</div>
+<div class="testimonial-copy">
+<p class="testimonial-kicker">Peaceful Practice</p>
+<h2>Designed for Quiet Minds and Gentle Days</h2>
+<p>We shape soothing spaces for people who want less noise and more ease. Small rituals, steady breath, and kind boundaries help the day feel lighter, slower, and more yours.</p>
+</div>
+<div class="testimonial-cards">
+<article class="testimonial-card t-card-1" data-speed="0.2">
+<div class="testimonial-card-inner">
+<div class="testimonial-logo logo-amd">Mind</div>
+<p>"Each step felt unhurried. The flow invited a deep breath, and the calm stayed with me long after."</p>
+<div class="testimonial-author">
+<span class="author-name">Ava Collins</span>
+<span class="author-title">Wellbeing Program Lead</span>
+</div>
+</div>
+</article>
+<article class="testimonial-card t-card-2" data-speed="0.35">
+<div class="testimonial-card-inner">
+<div class="testimonial-logo logo-salesforce">Peace</div>
+<p>"The experience was gentle and grounded, like a guided pause. I felt centered within minutes."</p>
+<div class="testimonial-author">
+<span class="author-name">Marcus Lee</span>
+<span class="author-title">Mindfulness Experience Director</span>
+</div>
+</div>
+</article>
+<article class="testimonial-card t-card-3" data-speed="0.55">
+<div class="testimonial-card-inner">
+<div class="testimonial-logo logo-redbull">Calm</div>
+<p>"It captured quiet energy without urgency. The softness helped me reset and return with clarity."</p>
+<div class="testimonial-author">
+<span class="author-name">Nina Ortega</span>
+<span class="author-title">Calm Practice Lead</span>
+</div>
+</div>
+</article>
+<article class="testimonial-card t-card-4" data-speed="0.75">
+<div class="testimonial-card-inner">
+<div class="testimonial-logo logo-coinbase">Coinbase</div>
+<p>"A clean, reassuring path to peace. The clarity and care made it easy to slow down and feel safe."</p>
+<div class="testimonial-author">
+<span class="author-name">Elliot Park</span>
+<span class="author-title">Director of Calm Design</span>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<!-- Final Gallery -->
+
+<section class="final-gallery" id="final-gallery">
+<div class="final-gallery-inner">
+<header class="final-gallery-header">
+<p class="final-kicker">Final Gallery</p>
+<h2>After The Horizon</h2>
+<p>Three calm frames that close the journey with cinematic stillness.</p>
+</header>
+<div class="final-grid">
+<article class="final-card">
+<img src="images/img11.jpg" alt="Crimson dusk scene">
+<div class="final-meta">
+<h3>Sky Watcher</h3>
+<p>Starry night skies fill the canvas with wonder.</p>
+</div>
+</article>
+<article class="final-card">
+<img src="images/img9.jpg" alt="Electric skyline scene">
+<div class="final-meta">
+<h3>Video games</h3>
+<p>Immerse yourself in vibrant worlds and engaging stories.</p>
+</div>
+</article>
+<article class="final-card">
+<img src="images/img10.jpg" alt="Verdant mist scene">
+<div class="final-meta">
+<h3>Cycling</h3>
+<p>Soft waves of color ripple through the landscape.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<!-- Bird Feeding -->
+
+<section class="bird-feeding-section" id="bird-feeding">
+<div class="bird-feeding-inner">
+<p class="bird-kicker">Wildlife Interaction</p>
+<h2>Feed The Flock</h2>
+<video id="birdVideo" src="videos/birds.mp4" muted preload="metadata" playsinline></video>
+<button id="feedBtn" type="button">Feed</button>
+</div>
+</section>
+
+<!-- Fish Tank -->
+
+<section class="fish-tank" id="fish-tank">
+<div class="water-overlay" aria-hidden="true"></div>
+<div class="fish-food" aria-hidden="true"></div>
+<p class="fish-quote">"Play with the fish and let your breath slow down."</p>
+<img class="fish fish-1" src="images/fish1.png" alt="Fish 1">
+<div class="bubbles" aria-hidden="true">
+<span class="bubble bubble-1"></span>
+<span class="bubble bubble-2"></span>
+<span class="bubble bubble-3"></span>
+<span class="bubble bubble-4"></span>
+<span class="bubble bubble-5"></span>
+</div>
+</section>
+
+<!-- Dark Room Switch -->
+
+<section class="room" id="dark-room">
+<div class="room-overlay" aria-hidden="true"></div>
+<button class="room-switch" type="button" aria-label="Turn on the light">
+<img src="images/switch.png" alt="">
+</button>
+<p class="room-instruction">Move your cursor to find the switch and turn on the light.</p>
+</section>
+
+<!-- Ending Section -->
+
+<section class="ending-section" id="ending">
+<video id="thanosVideo" src="videos/thanos.mp4" muted preload="metadata" playsinline></video>
+<button id="exitBtn" type="button">Exit</button>
+<div class="fade-screen" aria-hidden="true"></div>
+</section>
+
+<script src="effect.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
